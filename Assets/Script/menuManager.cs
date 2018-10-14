@@ -12,7 +12,7 @@ public class menuManager : MonoBehaviour {
         scoreText.text = "High Score: " + score.ToString();
     }
     public void toGame() {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("levelMenu");
 
     }
 }

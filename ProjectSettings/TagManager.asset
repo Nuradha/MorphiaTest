@@ -8,6 +8,7 @@ TagManager:
   - JumpPad
   - Telepoter
   - winposition
+  - life
   layers:
   - Default
   - TransparentFX

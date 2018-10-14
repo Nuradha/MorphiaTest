@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+using UnityEngine.SceneManagement;
+
 public class player : MonoBehaviour {
 
     private float inputDirection;
@@ -22,6 +24,10 @@ public class player : MonoBehaviour {
     void Update() {
         inputDirection = Input.GetAxis("Horizontal" ) * speed;
         moveVector = Vector3.zero;
+        if (Input.GetKey("escape"))
+        {
+            SceneManager.LoadScene("menu");
+        }
         if (IsControllerGrounded())
         {
             verticalVelocity = -1;
@@ -90,6 +96,10 @@ public class player : MonoBehaviour {
                 levelManager.instance.collectCoin();
                 Destroy(hit.gameObject);
 
+                break;
+            case "life":
+                levelManager.instance.collectLife();
+                Destroy(hit.gameObject);
                 break;
             case "JumpPad":
                 verticalVelocity = jumpForce * 2;

@@ -63,8 +63,10 @@
   <ItemGroup>
     <Compile Include="Assets\Script\cameraMotor.cs" />
     <Compile Include="Assets\Script\levelManager.cs" />
+    <Compile Include="Assets\Script\levelMenuManager.cs" />
     <Compile Include="Assets\Script\menuManager.cs" />
     <Compile Include="Assets\Script\player.cs" />
+    <Compile Include="Assets\Script\quit.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>C:/Users/DELL/Documents/Morphia/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>

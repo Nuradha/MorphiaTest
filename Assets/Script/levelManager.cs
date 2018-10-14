@@ -48,4 +48,12 @@ public class levelManager : MonoBehaviour {
         score += 5;
         scoreText.text = "Current Score: " + score.ToString();
     }
+    public void collectLife()
+    {
+        if (hitpoint < 3)
+        {
+            hitpoint++;
+            lifeText.text = "Lives: " + hitpoint.ToString();
+        }
+    }
 }
